@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const footerLinks = {
@@ -36,15 +37,13 @@ export default function Footer() {
                 viewport={{ once: true }}
                 className="space-y-4"
               >
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
-                    <span className="text-primary-dark font-bold text-xl">IS</span>
-                  </div>
-                  <div>
-                    <p className="font-bold text-lg leading-tight">Instituto</p>
-                    <p className="font-bold text-lg leading-tight">Semiguini</p>
-                  </div>
-                </div>
+                <Image
+                  src="/brand/PNG/BRANCO/SEMIGUINI HORIZONTAL 1.png"
+                  alt="Instituto Semiguini"
+                  width={180}
+                  height={50}
+                  className="h-12 w-auto"
+                />
                 <p className="text-white/70 text-sm leading-relaxed">
                   Transformando vidas e empresas atraves do desenvolvimento humano e organizacional desde 2006.
                 </p>

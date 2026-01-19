@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'Degular';
+  src: url('/brand/FONTE/Degular/Degular Variable/DegularVariable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +16,7 @@
   }
 
   body {
-    @apply font-sora text-gray-800 antialiased;
+    @apply font-degular text-gray-800 antialiased;
   }
 
   ::selection {

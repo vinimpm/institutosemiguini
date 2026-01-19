@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navigation = [
@@ -36,19 +37,20 @@ export default function Header() {
       <div className="container-custom">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center group">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="relative"
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-dark to-primary-light rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                <span className="text-white font-bold text-xl">IS</span>
-              </div>
+              <Image
+                src="/brand/PNG/COLORIDO/SEMIGUINI HORIZONTAL 1.png"
+                alt="Instituto Semiguini"
+                width={180}
+                height={50}
+                className="h-10 w-auto sm:h-12"
+                priority
+              />
             </motion.div>
-            <div className="hidden sm:block">
-              <p className="font-bold text-primary-dark text-lg leading-tight">Instituto</p>
-              <p className="font-bold text-primary-dark text-lg leading-tight">Semiguini</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
