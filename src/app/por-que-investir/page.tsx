@@ -7,40 +7,40 @@ const razoes = [
   {
     numero: '01',
     titulo: 'Pessoas Sao Seu Maior Ativo',
-    descricao: 'Colaboradores saudaveis emocionalmente sao mais produtivos, criativos e engajados. Investir em pessoas e investir no sucesso do negocio.',
+    descricao: 'Colaboradores saudáveis emocionalmente são mais produtivos, criativos e engajados. Investir em pessoas é investir no sucesso do negócio.',
   },
   {
     numero: '02',
     titulo: 'ROI Comprovado',
-    descricao: 'Empresas que investem em saude mental tem reducao de ate 25% em absenteismo e 40% em rotatividade, gerando economia significativa.',
+    descricao: 'Empresas que investem em saúde mental têm redução de até 25% em absenteísmo e 40% em rotatividade, gerando economia significativa.',
   },
   {
     numero: '03',
     titulo: 'Cultura Organizacional Forte',
-    descricao: 'Ambientes que priorizam o bem-estar atraem e retem os melhores talentos, criando uma vantagem competitiva sustentavel.',
+    descricao: 'Ambientes que priorizam o bem-estar atraem e retêm os melhores talentos, criando uma vantagem competitiva sustentável.',
   },
   {
     numero: '04',
-    titulo: 'Prevencao e Melhor que Remedio',
-    descricao: 'Programas preventivos custam muito menos que lidar com consequencias de burnout, afastamentos e acoes trabalhistas.',
+    titulo: 'Prevenção é Melhor que Remédio',
+    descricao: 'Programas preventivos custam muito menos que lidar com consequências de burnout, afastamentos e ações trabalhistas.',
   },
   {
     numero: '05',
     titulo: 'Responsabilidade Social',
-    descricao: 'Empresas que cuidam de seus colaboradores sao vistas como eticas e responsaveis, fortalecendo sua imagem no mercado.',
+    descricao: 'Empresas que cuidam de seus colaboradores são vistas como éticas e responsáveis, fortalecendo sua imagem no mercado.',
   },
   {
     numero: '06',
-    titulo: 'Resultados Sustentaveis',
-    descricao: 'Transformacoes genuinas geram resultados duradouros, nao apenas melhorias temporarias que se perdem com o tempo.',
+    titulo: 'Resultados Sustentáveis',
+    descricao: 'Transformações genuínas geram resultados duradouros, não apenas melhorias temporárias que se perdem com o tempo.',
   },
 ]
 
 const estatisticas = [
-  { valor: '25%', label: 'Reducao em absenteismo' },
+  { valor: '25%', label: 'Redução em absenteísmo' },
   { valor: '40%', label: 'Menor rotatividade' },
   { valor: '3x', label: 'Mais engajamento' },
-  { valor: '80%', label: 'Satisfacao dos colaboradores' },
+  { valor: '80%', label: 'Satisfação dos colaboradores' },
 ]
 
 export default function PorQueInvestir() {
@@ -61,7 +61,7 @@ export default function PorQueInvestir() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              Investimento Estrategico
+              Investimento Estratégico
             </motion.span>
 
             <motion.h1
@@ -123,7 +123,7 @@ export default function PorQueInvestir() {
               6 Razoes para Investir
             </h2>
             <p className="text-lg text-gray-600">
-              Argumentos solidos para convencer qualquer gestor da importancia
+              Argumentos sólidos para convencer qualquer gestor da importância
               do investimento em desenvolvimento humano.
             </p>
           </motion.div>
@@ -172,9 +172,9 @@ export default function PorQueInvestir() {
               </div>
 
               <blockquote className="text-xl md:text-2xl text-gray-700 leading-relaxed text-center relative z-10">
-                "Empresas sao feitas de pessoas, e pessoas equilibradas
-                emocionalmente criam ambientes mais saudaveis, produtivos e
-                colaborativos. O melhor investimento que voce pode fazer e no
+                "Empresas são feitas de pessoas, e pessoas equilibradas
+                emocionalmente criam ambientes mais saudáveis, produtivos e
+                colaborativos. O melhor investimento que você pode fazer é no
                 seu capital humano."
               </blockquote>
 
@@ -197,11 +197,11 @@ export default function PorQueInvestir() {
             viewport={{ once: true }}
           >
             <h2 className="heading-2 mb-6">
-              Pronto para Dar o Proximo Passo?
+              Pronto para Dar o Próximo Passo?
             </h2>
             <p className="text-xl text-white/80 mb-10">
               Entre em contato para uma conversa sem compromisso e descubra como
-              podemos ajudar sua empresa a transformar resultados atraves das pessoas.
+              podemos ajudar sua empresa a transformar resultados através das pessoas.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -225,7 +225,7 @@ export default function PorQueInvestir() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Ver Todos os Beneficios
+                  Ver Todos os Benefícios
                 </motion.button>
               </Link>
             </div>

@@ -5,93 +5,89 @@ import { motion } from 'framer-motion'
 const categorias = [
   {
     titulo: 'Psicoterapia Individual',
-    descricao: 'Atendimento personalizado focado nas necessidades especificas de cada pessoa.',
+    descricao: 'Atendimento personalizado focado nas necessidades específicas de cada pessoa.',
     tecnicas: [
       {
         nome: 'Psicoterapia Breve',
-        descricao: 'Abordagem focada em objetivos especificos com resultados em curto prazo.',
+        descricao: 'Abordagem focada em objetivos específicos com resultados em curto prazo.',
       },
       {
         nome: 'Terapia Transpessoal',
-        descricao: 'Integracao de aspectos psicologicos, emocionais e espirituais.',
+        descricao: 'Integração de aspectos psicológicos, emocionais e espirituais.',
       },
       {
         nome: 'Coaching IS Humanizado',
-        descricao: 'Metodologia sistemica e transpessoal para desenvolvimento pessoal e profissional.',
+        descricao: 'Metodologia sistêmica e transpessoal para desenvolvimento pessoal e profissional.',
       },
     ],
   },
   {
     titulo: 'Terapia de Casal',
-    descricao: 'Trabalho especializado para reconstrucao e fortalecimento de relacionamentos.',
+    descricao: 'Trabalho especializado para reconstrução e fortalecimento de relacionamentos.',
     tecnicas: [
       {
-        nome: 'Reconstrucao de Vinculos',
-        descricao: 'Restauracao da conexao emocional e confianca entre o casal.',
+        nome: 'Reconstrução de Vínculos',
+        descricao: 'Restauração da conexão emocional e confiança entre o casal.',
       },
       {
-        nome: 'Comunicacao Afetiva',
-        descricao: 'Desenvolvimento de habilidades de comunicacao respeitosa e empativa.',
+        nome: 'Comunicação Afetiva',
+        descricao: 'Desenvolvimento de habilidades de comunicação respeitosa e empática.',
       },
       {
         nome: 'Resgate da Intimidade',
-        descricao: 'Reconexao emocional e fisica para fortalecer a parceria.',
+        descricao: 'Reconexão emocional e física para fortalecer a parceria.',
       },
     ],
   },
   {
-    titulo: 'Tecnicas de Expansao e Reprogramacao',
-    descricao: 'Metodologias avancadas para transformacao profunda e duradoura.',
+    titulo: 'Técnicas de Expansão e Reprogramação',
+    descricao: 'Metodologias avançadas para transformação profunda e duradoura.',
     tecnicas: [
       {
-        nome: 'Constelacao Familiar',
-        descricao: 'Revelacao e resolucao de dinamicas familiares inconscientes.',
+        nome: 'Constelação Familiar',
+        descricao: 'Revelação e resolução de dinâmicas familiares inconscientes.',
       },
       {
         nome: 'Terapia na Linha do Tempo',
-        descricao: 'Regressao de memoria para acessar e ressignificar experiencias passadas.',
+        descricao: 'Regressão de memória para acessar e ressignificar experiências passadas.',
       },
       {
-        nome: 'Reprogramacao Neurocelular (R.N.C)',
-        descricao: 'Tecnica para reprogramar padroes limitantes a nivel celular.',
+        nome: 'Reprogramação Neurocelular (R.N.C)',
+        descricao: 'Técnica para reprogramar padrões limitantes a nível celular.',
       },
       {
-        nome: 'EFT - Tecnica de Liberacao Emocional',
-        descricao: 'Estimulacao de pontos de acupuntura para liberar emocoes bloqueadas.',
+        nome: 'EFT - Técnica de Liberação Emocional',
+        descricao: 'Estimulação de pontos de acupuntura para liberar emoções bloqueadas.',
       },
       {
         nome: 'Hipnose e PNL',
-        descricao: 'Acesso ao subconsciente para mudancas comportamentais profundas.',
+        descricao: 'Acesso ao subconsciente para mudanças comportamentais profundas.',
       },
       {
-        nome: 'Frequencias de Brilho',
-        descricao: 'Trabalho com frequencias energeticas para equilibrio e cura.',
+        nome: 'Frequências de Brilho',
+        descricao: 'Trabalho com frequências energéticas para equilíbrio e cura.',
       },
     ],
   },
   {
     titulo: 'Terapias Complementares e Integrativas',
-    descricao: 'Abordagens holisticas que complementam o trabalho terapeutico principal.',
+    descricao: 'Abordagens holísticas que complementam o trabalho terapêutico principal.',
     tecnicas: [
       {
-        nome: 'Reiki (niveis I, II, III)',
-        descricao: 'Canalizacao de energia universal para equilibrio e cura.',
+        nome: 'Reiki (níveis I, II, III)',
+        descricao: 'Canalização de energia universal para equilíbrio e cura.',
       },
       {
         nome: 'Calatonia',
-        descricao: 'Tecnica de relaxamento profundo atraves de toques sutis.',
+        descricao: 'Técnica de relaxamento profundo através de toques sutis.',
       },
       {
-        nome: 'Access The Bars',
-        descricao: 'Liberacao de limitacoes atraves de pontos especificos na cabeca.',
+        nome: 'Barra de Access',
+        descricao: 'Liberação de limitações através de pontos específicos na cabeça.',
       },
-      {
-        nome: 'Temazcal - Roda de Cura Xamanica',
-        descricao: 'Ritual de purificacao e reconexao com elementos ancestrais.',
-      },
-      {
+{
         nome: 'Cromoterapia',
-        descricao: 'Uso terapeutico das cores para equilibrio energetico.',
+        descricao: 'Uso terapêutico das cores para equilíbrio energético.',
       },
     ],
   },
@@ -111,15 +107,15 @@ export default function Tecnicas() {
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="inline-block px-4 py-2 bg-accent/20 text-primary-dark font-medium rounded-full text-sm mb-6">
-              Nossas Tecnicas
+              Nossas Técnicas
             </span>
 
             <h1 className="heading-1 text-primary-dark mb-6">
-              Abordagem Terapeutica Integrativa
+              Abordagem Terapêutica Integrativa
             </h1>
 
             <p className="text-xl text-gray-600">
-              Mais de 20 formacoes terapeuticas combinadas para promover transformacao
+              Mais de 20 formações terapêuticas combinadas para promover transformação
               profunda e duradoura, respeitando a singularidade de cada pessoa.
             </p>
           </motion.div>
@@ -136,11 +132,11 @@ export default function Tecnicas() {
             viewport={{ once: true }}
           >
             <p className="text-xl">
-              Voce sabia que mais de <span className="text-accent font-bold">80%</span> dos
-              bloqueios emocionais derivam de padroes inconscientes familiares ou memorias
-              reprimidas? A integracao de nossas tecnicas pode acelerar em ate{' '}
-              <span className="text-accent font-bold">3x</span> a resolucao de traumas,
-              fobias e desequilibrios emocionais.
+              Você sabia que mais de <span className="text-accent font-bold">80%</span> dos
+              bloqueios emocionais derivam de padrões inconscientes familiares ou memórias
+              reprimidas? A integração de nossas técnicas pode acelerar em até{' '}
+              <span className="text-accent font-bold">3x</span> a resolução de traumas,
+              fobias e desequilíbrios emocionais.
             </p>
           </motion.div>
         </div>
@@ -203,11 +199,11 @@ export default function Tecnicas() {
             viewport={{ once: true }}
           >
             <h2 className="heading-2 text-primary-dark mb-6">
-              Qual Tecnica e Ideal para Voce?
+              Qual Técnica é Ideal para Você?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Cada pessoa e unica e merece uma abordagem personalizada. Entre em
-              contato para uma avaliacao e descubra qual caminho terapeutico e mais
+              Cada pessoa é única e merece uma abordagem personalizada. Entre em
+              contato para uma avaliação e descubra qual caminho terapêutico é mais
               adequado para suas necessidades.
             </p>
 

@@ -12,8 +12,8 @@ const diferenciais = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
       </svg>
     ),
-    title: 'Visao Estrategica',
-    description: 'Analise profunda das necessidades organizacionais para solucoes assertivas.',
+    title: 'Visão Estratégica',
+    description: 'Análise profunda das necessidades organizacionais para soluções assertivas.',
   },
   {
     icon: (
@@ -21,7 +21,7 @@ const diferenciais = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
       </svg>
     ),
-    title: 'Solucoes Personalizadas',
+    title: 'Soluções Personalizadas',
     description: 'Programas desenvolvidos sob medida para cada empresa e equipe.',
   },
   {
@@ -31,7 +31,7 @@ const diferenciais = [
       </svg>
     ),
     title: 'Profissionais Experientes',
-    description: 'Equipe com mais de 20 formacoes terapeuticas e anos de experiencia pratica.',
+    description: 'Equipe com mais de 20 formações terapêuticas e anos de experiência prática.',
   },
   {
     icon: (
@@ -39,8 +39,8 @@ const diferenciais = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
-    title: 'Metodologia Dinamica',
-    description: 'Abordagem pratica e envolvente que gera resultados reais e duradouros.',
+    title: 'Metodologia Dinâmica',
+    description: 'Abordagem prática e envolvente que gera resultados reais e duradouros.',
   },
   {
     icon: (
@@ -48,8 +48,8 @@ const diferenciais = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
       </svg>
     ),
-    title: 'Foco em Transformacao Real',
-    description: 'Compromisso com mudancas profundas e sustentaveis, nao apenas teoricas.',
+    title: 'Foco em Transformação Real',
+    description: 'Compromisso com mudanças profundas e sustentáveis, não apenas teóricas.',
   },
 ]
 
@@ -107,8 +107,8 @@ export default function Diferencial() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Nossa abordagem unica combina experiencia, metodologias comprovadas e
-            compromisso genuino com a transformacao.
+            Nossa abordagem única combina experiência, metodologias comprovadas e
+            compromisso genuíno com a transformação.
           </motion.p>
         </div>
 

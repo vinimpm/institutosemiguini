@@ -8,21 +8,21 @@ import Link from 'next/link'
 const programas = [
   {
     title: 'Essencia e Plenitude Experience',
-    description: 'Uma jornada de autodescoberta e transformacao, projetada para quem busca um mergulho profundo no seu eu interior.',
+    description: 'Uma jornada de autodescoberta e transformação, projetada para quem busca um mergulho profundo no seu eu interior.',
     featured: true,
     href: '/essencia-e-plenitude',
     image: 'bg-gradient-to-br from-primary-dark to-primary-light',
   },
   {
     title: 'Coaching Executivo',
-    description: 'Desenvolvimento personalizado para lideres e executivos alcancarem seu maximo potencial.',
+    description: 'Desenvolvimento personalizado para líderes e executivos alcançarem seu máximo potencial.',
     featured: false,
     href: '/cursos',
     image: 'bg-gradient-to-br from-primary-light to-accent',
   },
   {
     title: 'Leader Training I e II',
-    description: 'Formacao completa em lideranca com metodologias praticas e transformadoras.',
+    description: 'Formação completa em liderança com metodologias práticas e transformadoras.',
     featured: false,
     href: '/cursos',
     image: 'bg-gradient-to-br from-olive-600 to-olive-400',
@@ -56,7 +56,7 @@ export default function Programas() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Programas de Transformacao
+            Programas de Transformação
           </motion.h2>
 
           <motion.p
@@ -65,7 +65,7 @@ export default function Programas() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Experiencias imersivas e programas estruturados para impulsionar seu
+            Experiências imersivas e programas estruturados para impulsionar seu
             desenvolvimento pessoal e profissional.
           </motion.p>
         </div>

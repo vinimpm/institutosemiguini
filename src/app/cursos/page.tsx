@@ -4,16 +4,16 @@ import { motion } from 'framer-motion'
 
 const cursos = [
   {
-    titulo: 'Essencia e Plenitude Experience',
-    descricao: 'Uma jornada de autodescoberta e transformacao profunda. Imersao completa para quem busca reconexao com sua essencia.',
-    duracao: 'Imersao de fim de semana',
+    titulo: 'Essência e Plenitude Experience',
+    descricao: 'Uma jornada de autodescoberta e transformação profunda. Imersão completa para quem busca reconexão com sua essência.',
+    duracao: 'Imersão de fim de semana',
     modalidade: 'Presencial',
     destaque: true,
     cor: 'from-primary-dark to-primary-light',
   },
   {
     titulo: 'Leader Training I',
-    descricao: 'Formacao fundamental em lideranca. Desenvolva as competencias essenciais para liderar com proposito e impacto.',
+    descricao: 'Formação fundamental em liderança. Desenvolva as competências essenciais para liderar com propósito e impacto.',
     duracao: '40 horas',
     modalidade: 'Presencial / Online',
     destaque: false,
@@ -21,7 +21,7 @@ const cursos = [
   },
   {
     titulo: 'Leader Training II',
-    descricao: 'Nivel avancado de lideranca. Aprofundamento em tecnicas de gestao de equipes e desenvolvimento de alta performance.',
+    descricao: 'Nível avançado de liderança. Aprofundamento em técnicas de gestão de equipes e desenvolvimento de alta performance.',
     duracao: '40 horas',
     modalidade: 'Presencial / Online',
     destaque: false,
@@ -29,23 +29,23 @@ const cursos = [
   },
   {
     titulo: 'Coaching Executivo',
-    descricao: 'Programa individualizado para executivos e lideres que buscam maximizar seu potencial e acelerar resultados.',
-    duracao: '10 sessoes',
+    descricao: 'Programa individualizado para executivos e líderes que buscam maximizar seu potencial e acelerar resultados.',
+    duracao: '10 sessões',
     modalidade: 'Presencial / Online',
     destaque: false,
     cor: 'from-accent to-primary-light',
   },
   {
-    titulo: 'Inteligencia Emocional nas Organizacoes',
-    descricao: 'Desenvolva a capacidade de reconhecer e gerenciar emocoes para melhorar relacionamentos e desempenho.',
+    titulo: 'Inteligência Emocional nas Organizações',
+    descricao: 'Desenvolva a capacidade de reconhecer e gerenciar emoções para melhorar relacionamentos e desempenho.',
     duracao: '16 horas',
     modalidade: 'Presencial / Online',
     destaque: false,
     cor: 'from-olive-500 to-primary-light',
   },
   {
-    titulo: 'Gestao de Conflitos e Comunicacao',
-    descricao: 'Aprenda tecnicas eficazes para resolver conflitos e desenvolver uma comunicacao assertiva e empativa.',
+    titulo: 'Gestão de Conflitos e Comunicação',
+    descricao: 'Aprenda técnicas eficazes para resolver conflitos e desenvolver uma comunicação assertiva e empática.',
     duracao: '16 horas',
     modalidade: 'Presencial / Online',
     destaque: false,
@@ -54,12 +54,12 @@ const cursos = [
 ]
 
 const palestras = [
-  'Saude Mental nas Organizacoes',
-  'Lideranca com Proposito',
-  'Resiliencia e Adaptabilidade',
-  'Equilibrio Vida-Trabalho',
-  'Inteligencia Emocional',
-  'Comunicacao Nao Violenta',
+  'Saúde Mental nas Organizações',
+  'Liderança com Propósito',
+  'Resiliência e Adaptabilidade',
+  'Equilíbrio Vida-Trabalho',
+  'Inteligência Emocional',
+  'Comunicação Não Violenta',
 ]
 
 export default function Cursos() {
@@ -80,7 +80,7 @@ export default function Cursos() {
             animate={{ opacity: 1, y: 0 }}
           >
             <span className="inline-block px-4 py-2 bg-accent/20 text-primary-dark font-medium rounded-full text-sm mb-6">
-              Cursos e Formacoes
+              Cursos e Formações
             </span>
 
             <h1 className="heading-1 text-primary-dark mb-6">
@@ -88,8 +88,8 @@ export default function Cursos() {
             </h1>
 
             <p className="text-xl text-gray-600">
-              Programas de formacao e desenvolvimento para individuos e equipes
-              que buscam transformacao genuina e resultados duradouros.
+              Programas de formação e desenvolvimento para indivíduos e equipes
+              que buscam transformação genuína e resultados duradouros.
             </p>
           </motion.div>
         </div>
@@ -108,7 +108,7 @@ export default function Cursos() {
               Programas
             </span>
             <h2 className="heading-2 text-primary-dark mb-6">
-              Nossos Cursos e Formacoes
+              Nossos Cursos e Formações
             </h2>
             <p className="text-lg text-gray-600">
               Escolha o programa ideal para seu momento e objetivos de desenvolvimento.
@@ -189,8 +189,8 @@ export default function Cursos() {
               Palestras e Workshops
             </h2>
             <p className="text-lg text-white/70">
-              Levamos conhecimento e inspiracao para sua empresa atraves de
-              palestras dinamicas e workshops interativos.
+              Levamos conhecimento e inspiração para sua empresa através de
+              palestras dinâmicas e workshops interativos.
             </p>
           </motion.div>
 
@@ -247,11 +247,11 @@ export default function Cursos() {
             viewport={{ once: true }}
           >
             <h2 className="heading-2 text-primary-dark mb-6">
-              Nao Sabe por Onde Comecar?
+              Não Sabe por Onde Começar?
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Entre em contato e conversemos sobre suas necessidades. Juntos,
-              encontraremos o programa ideal para voce ou sua equipe.
+              encontraremos o programa ideal para você ou sua equipe.
             </p>
 
             <motion.a

@@ -7,8 +7,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const navigation = [
   { name: 'Adilson Semiguini', href: '/adilson-semiguini' },
-  { name: 'Essencia e Plenitude', href: '/essencia-e-plenitude' },
-  { name: 'Tecnicas', href: '/tecnicas' },
+  { name: 'Essência e Plenitude', href: '/essencia-e-plenitude' },
+  { name: 'Técnicas', href: '/tecnicas' },
   { name: 'Para Empresas', href: '/beneficios-empresa' },
   { name: 'Para Colaboradores', href: '/beneficios-colaboradores' },
   { name: 'Por que investir?', href: '/por-que-investir' },

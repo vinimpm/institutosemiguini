@@ -6,8 +6,8 @@ import WhatsAppButton from '@/components/ui/WhatsAppButton'
 
 export const metadata: Metadata = {
   title: 'Instituto Semiguini | Transformando Vidas',
-  description: 'Consultoria em Desenvolvimento Humano e Organizacional. Transformacao humana e organizacional desde 2006 com cursos motivacionais, palestras, imersoes e tecnicas terapeuticas.',
-  keywords: 'desenvolvimento humano, desenvolvimento organizacional, coaching, terapia transpessoal, consultoria empresarial, Sao Paulo',
+  description: 'Consultoria em Desenvolvimento Humano e Organizacional. Transformação humana e organizacional desde 2006 com cursos motivacionais, palestras, imersões e técnicas terapêuticas.',
+  keywords: 'desenvolvimento humano, desenvolvimento organizacional, coaching, terapia transpessoal, consultoria empresarial, São Paulo',
   authors: [{ name: 'Instituto Semiguini' }],
   openGraph: {
     title: 'Instituto Semiguini | Transformando Vidas',

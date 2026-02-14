@@ -39,7 +39,7 @@ export default function QuemSomos() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Transformacao Humana e Organizacional
+            Transformação Humana e Organizacional
           </motion.h2>
 
           <motion.div
@@ -49,15 +49,15 @@ export default function QuemSomos() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p>
-              O <span className="text-accent font-semibold">Instituto Semiguini</span> e uma empresa de{' '}
-              <span className="text-white font-semibold">transformacao humana e organizacional</span>,
+              O <span className="text-accent font-semibold">Instituto Semiguini</span> é uma empresa de{' '}
+              <span className="text-white font-semibold">transformação humana e organizacional</span>,
               no mercado desde <span className="text-accent font-semibold">2006</span> com cursos
-              motivacionais, palestras, imersoes entre outras tecnicas.
+              motivacionais, palestras, imersões entre outras técnicas.
             </p>
             <p>
-              <span className="text-white font-semibold">Atuamos</span> como parceiros estrategicos
-              de empresas que acreditam que o desenvolvimento de pessoas e o caminho mais poderoso
-              para alcancar resultados sustentaveis.
+              <span className="text-white font-semibold">Atuamos</span> como parceiros estratégicos
+              de empresas que acreditam que o desenvolvimento de pessoas é o caminho mais poderoso
+              para alcançar resultados sustentáveis.
             </p>
           </motion.div>
 
@@ -69,8 +69,8 @@ export default function QuemSomos() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             {[
-              { number: '18+', label: 'Anos de Experiencia' },
-              { number: '20+', label: 'Formacoes Terapeuticas' },
+              { number: '18+', label: 'Anos de Experiência' },
+              { number: '20+', label: 'Formações Terapêuticas' },
               { number: '100s', label: 'Vidas Transformadas' },
               { number: '50+', label: 'Empresas Atendidas' },
             ].map((stat, index) => (

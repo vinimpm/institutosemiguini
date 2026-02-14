@@ -8,11 +8,11 @@ const modulos = [
   {
     id: 'rh',
     title: 'Processos de Recursos Humanos',
-    description: 'Otimizacao de processos de RH para atrair, desenvolver e reter talentos de forma estrategica.',
+    description: 'Otimização de processos de RH para atrair, desenvolver e reter talentos de forma estratégica.',
     items: [
       'Entrevistas e Assessment',
-      'Avaliacao de Desempenho',
-      'Gestao de Clima Organizacional',
+      'Avaliação de Desempenho',
+      'Gestão de Clima Organizacional',
       'Programas de Reconhecimento',
     ],
     icon: (
@@ -23,13 +23,13 @@ const modulos = [
   },
   {
     id: 'lideranca',
-    title: 'Desenvolvimento de Lideranca',
-    description: 'Formacao de lideres inspiradores, capazes de engajar equipes e gerar resultados extraordinarios.',
+    title: 'Desenvolvimento de Liderança',
+    description: 'Formação de líderes inspiradores, capazes de engajar equipes e gerar resultados extraordinários.',
     items: [
       'Leader Training I e II',
       'Coaching Executivo',
-      'Lideranca com Proposito',
-      'Comunicacao de Lideranca',
+      'Liderança com Propósito',
+      'Comunicação de Liderança',
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,12 +40,12 @@ const modulos = [
   {
     id: 'equipes',
     title: 'Desenvolvimento de Equipes',
-    description: 'Construcao de equipes de alta performance atraves de confianca, colaboracao e proposito compartilhado.',
+    description: 'Construção de equipes de alta performance através de confiança, colaboração e propósito compartilhado.',
     items: [
       'Team Building',
-      'Gestao de Conflitos',
-      'Comunicacao Assertiva',
-      'Inteligencia Emocional',
+      'Gestão de Conflitos',
+      'Comunicação Assertiva',
+      'Inteligência Emocional',
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,12 +56,12 @@ const modulos = [
   {
     id: 'produtividade',
     title: 'Produtividade',
-    description: 'Metodologias e tecnicas para maximizar a eficiencia sem comprometer o bem-estar das pessoas.',
+    description: 'Metodologias e técnicas para maximizar a eficiência sem comprometer o bem-estar das pessoas.',
     items: [
-      'Gestao do Tempo',
-      'Foco e Priorizacao',
-      'Equilibrio Vida-Trabalho',
-      'Gestao de Energia',
+      'Gestão do Tempo',
+      'Foco e Priorização',
+      'Equilíbrio Vida-Trabalho',
+      'Gestão de Energia',
     ],
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +93,7 @@ export default function Modulos() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Areas de Atuacao
+            Áreas de Atuação
           </motion.span>
 
           <motion.h2
@@ -102,7 +102,7 @@ export default function Modulos() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Modulos de Desenvolvimento
+            Módulos de Desenvolvimento
           </motion.h2>
 
           <motion.p
@@ -111,7 +111,7 @@ export default function Modulos() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Solucoes completas para transformar pessoas e organizacoes em todas as frentes.
+            Soluções completas para transformar pessoas e organizações em todas as frentes.
           </motion.p>
         </div>
 

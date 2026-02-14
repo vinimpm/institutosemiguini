@@ -4,29 +4,29 @@ import { motion } from 'framer-motion'
 
 const beneficios = [
   'Autoconhecimento profundo',
-  'Equilibrio emocional',
-  'Expansao da consciencia',
+  'Equilíbrio emocional',
+  'Expansão da consciência',
   'Desbloqueio de potenciais',
-  'Clareza de proposito',
-  'Transformacao duradoura',
+  'Clareza de propósito',
+  'Transformação duradoura',
 ]
 
 const etapas = [
   {
-    titulo: 'Preparacao',
-    descricao: 'Acolhimento e preparacao para a jornada de autodescoberta.',
+    titulo: 'Preparação',
+    descricao: 'Acolhimento e preparação para a jornada de autodescoberta.',
   },
   {
-    titulo: 'Imersao',
-    descricao: 'Vivencias profundas com tecnicas integrativas e terapeuticas.',
+    titulo: 'Imersão',
+    descricao: 'Vivências profundas com técnicas integrativas e terapêuticas.',
   },
   {
-    titulo: 'Integracao',
-    descricao: 'Processamento e integracao dos insights e transformacoes.',
+    titulo: 'Integração',
+    descricao: 'Processamento e integração dos insights e transformações.',
   },
   {
-    titulo: 'Sustentacao',
-    descricao: 'Acompanhamento para sustentar as mudancas no dia a dia.',
+    titulo: 'Sustentação',
+    descricao: 'Acompanhamento para sustentar as mudanças no dia a dia.',
   },
 ]
 
@@ -48,7 +48,7 @@ export default function EssenciaEPlenitude() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              Programa de Transformacao
+              Programa de Transformação
             </motion.span>
 
             <motion.h1
@@ -57,7 +57,7 @@ export default function EssenciaEPlenitude() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
-              Essencia e Plenitude
+              Essência e Plenitude
               <span className="block text-accent">Experience</span>
             </motion.h1>
 
@@ -67,7 +67,7 @@ export default function EssenciaEPlenitude() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Uma jornada de autodescoberta e transformacao, projetada para quem
+              Uma jornada de autodescoberta e transformação, projetada para quem
               busca um mergulho profundo no seu eu interior.
             </motion.p>
 
@@ -104,19 +104,19 @@ export default function EssenciaEPlenitude() {
               </span>
 
               <h2 className="heading-2 text-primary-dark mb-6">
-                Uma Imersao em Si Mesmo
+                Uma Imersão em Si Mesmo
               </h2>
 
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                O Programa Essencia e Plenitude e uma jornada de autodescoberta e
-                transformacao, projetada para quem busca um mergulho profundo no seu
+                O Programa Essência e Plenitude é uma jornada de autodescoberta e
+                transformação, projetada para quem busca um mergulho profundo no seu
                 eu interior.
               </p>
 
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Atraves de metodologias integrativas, o programa visa desbloquear
-                potenciais, promover o equilibrio emocional e expandir a consciencia,
-                permitindo que cada participante viva sua vida com mais proposito e
+                Através de metodologias integrativas, o programa visa desbloquear
+                potenciais, promover o equilíbrio emocional e expandir a consciência,
+                permitindo que cada participante viva sua vida com mais propósito e
                 plenitude.
               </p>
 
@@ -156,8 +156,8 @@ export default function EssenciaEPlenitude() {
                     Processo A.M.E
                   </h3>
                   <p className="text-gray-600">
-                    Amor, Missao e Essencia - os pilares fundamentais para uma vida
-                    plena e com proposito.
+                    Amor, Missão e Essência - os pilares fundamentais para uma vida
+                    plena e com propósito.
                   </p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function EssenciaEPlenitude() {
               Etapas do Programa
             </h2>
             <p className="text-lg text-gray-600">
-              Uma jornada estruturada para guia-lo em cada passo da sua transformacao.
+              Uma jornada estruturada para guiá-lo em cada passo da sua transformação.
             </p>
           </motion.div>
 
@@ -223,11 +223,11 @@ export default function EssenciaEPlenitude() {
             viewport={{ once: true }}
           >
             <h2 className="heading-2 mb-6">
-              Pronto para a Transformacao?
+              Pronto para a Transformação?
             </h2>
             <p className="text-xl text-white/80 mb-10">
-              Junte-se a centenas de pessoas que ja viveram essa experiencia
-              transformadora e descobriram sua essencia.
+              Junte-se a centenas de pessoas que já viveram essa experiência
+              transformadora e descobriram sua essência.
             </p>
 
             <motion.a

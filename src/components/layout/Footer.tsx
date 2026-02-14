@@ -7,12 +7,12 @@ import { motion } from 'framer-motion'
 const footerLinks = {
   institucional: [
     { name: 'Adilson Semiguini', href: '/adilson-semiguini' },
-    { name: 'Essencia e Plenitude', href: '/essencia-e-plenitude' },
-    { name: 'Tecnicas', href: '/tecnicas' },
+    { name: 'Essência e Plenitude', href: '/essencia-e-plenitude' },
+    { name: 'Técnicas', href: '/tecnicas' },
   ],
   servicos: [
-    { name: 'Beneficios para Empresa', href: '/beneficios-empresa' },
-    { name: 'Beneficios para Colaboradores', href: '/beneficios-colaboradores' },
+    { name: 'Benefícios para Empresa', href: '/beneficios-empresa' },
+    { name: 'Benefícios para Colaboradores', href: '/beneficios-colaboradores' },
     { name: 'Por que investir?', href: '/por-que-investir' },
   ],
   cursos: [
@@ -45,7 +45,7 @@ export default function Footer() {
                   className="h-12 w-auto"
                 />
                 <p className="text-white/70 text-sm leading-relaxed">
-                  Transformando vidas e empresas atraves do desenvolvimento humano e organizacional desde 2006.
+                  Transformando vidas e empresas através do desenvolvimento humano e organizacional desde 2006.
                 </p>
                 {/* Social Icons */}
                 <div className="flex gap-4 pt-2">
@@ -105,7 +105,7 @@ export default function Footer() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
               >
-                <h4 className="font-semibold text-accent mb-4">Servicos</h4>
+                <h4 className="font-semibold text-accent mb-4">Serviços</h4>
                 <ul className="space-y-3">
                   {footerLinks.servicos.map((link) => (
                     <li key={link.name}>
@@ -136,7 +136,7 @@ export default function Footer() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span>Sao Paulo, SP - Brasil</span>
+                    <span>São Paulo, SP - Brasil</span>
                   </li>
                   <li>
                     <a

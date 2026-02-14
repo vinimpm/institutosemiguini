@@ -90,9 +90,9 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Atuamos como parceiros estrategicos de empresas que acreditam que o
-              desenvolvimento de pessoas e o caminho mais poderoso para alcancar
-              resultados sustentaveis.
+              Atuamos como parceiros estratégicos de empresas que acreditam que o
+              desenvolvimento de pessoas é o caminho mais poderoso para alcançar
+              resultados sustentáveis.
             </motion.p>
 
             <motion.div

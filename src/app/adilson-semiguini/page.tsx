@@ -5,80 +5,116 @@ import Image from 'next/image'
 
 const formacoes = [
   'Psicoterapia Transpessoal',
-  'Constelacao Familiar',
+  'Constelação Familiar',
   'Terapia na Linha do Tempo',
-  'Reprogramacao Neurocelular (R.N.C)',
-  'EFT - Tecnica de Liberacao Emocional',
-  'Hipnose Clinica',
-  'Programacao Neurolinguistica (PNL)',
-  'Reiki (niveis I, II, III)',
+  'Reprogramação Neurocelular (R.N.C)',
+  'EFT - Técnica de Liberação Emocional',
+  'Hipnose Clínica',
+  'Programação Neurolinguística (PNL)',
+  'Reiki (níveis I, II, III)',
   'Calatonia',
-  'Access The Bars',
-  'Temazcal - Roda de cura xamanica',
-  'Cromoterapia',
+  'Barra de Access',
+'Cromoterapia',
   'Coaching IS Humanizado',
-  'Frequencias de Brilho',
+  'Frequências de Brilho',
 ]
 
 const frentesAtuacao = [
-  'Processo A.M.E - Essencia e Plenitude',
+  'Processo A.M.E - Essência e Plenitude',
   'Prosperidade familiar, profissional e financeira',
-  'Lideranca com proposito',
-  'Oficinas, vivencias e rodas de cura',
-  'Cursos e Palestras com foco em transformacao',
+  'Liderança com propósito',
+  'Oficinas, vivências e rodas de cura',
+  'Cursos e Palestras com foco em transformação',
 ]
 
 export default function AdilsonSemiguini() {
   return (
     <div className="pt-24">
-      {/* Hero */}
-      <section className="section-padding bg-gradient-to-br from-olive-50 to-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary-light/10 to-transparent" />
+      {/* Hero - Sua Carreira */}
+      <section className="section-padding bg-primary-dark text-white relative overflow-hidden">
+        <motion.div
+          className="absolute top-1/2 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl"
+          animate={{ scale: [1, 1.2, 1] }}
+          transition={{ duration: 8, repeat: Infinity }}
+        />
 
         <div className="container-custom relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-block px-4 py-2 bg-accent/20 text-primary-dark font-medium rounded-full text-sm mb-6">
-                Especialista em Transformacao Humana
-              </span>
+              <motion.h1
+                className="text-5xl sm:text-6xl md:text-7xl font-bold mb-10"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                Sua carreira<span className="text-accent">.</span>
+              </motion.h1>
 
-              <h1 className="heading-1 text-primary-dark mb-6">
-                Adilson Semiguini
-              </h1>
+              <div className="space-y-6 text-lg text-white/80 leading-relaxed">
+                <motion.div
+                  className="flex gap-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 }}
+                >
+                  <span className="w-3 h-3 bg-accent rounded-full mt-2 flex-shrink-0" />
+                  <p>
+                    Psicoterapeuta Transpessoal (CRT 41.796),{' '}
+                    <span className="font-bold text-white">treinador comportamental e
+                    especialista em desenvolvimento humano</span>, Adilson construiu uma trajetória de{' '}
+                    <span className="font-bold text-white">mais de 19 anos</span> dedicada a uma
+                    missão clara: romper limitações emocionais, expandir consciências e ativar o
+                    verdadeiro potencial humano.
+                  </p>
+                </motion.div>
 
-              <div className="flex flex-wrap items-center gap-3 mb-6 text-gray-600">
-                <span className="px-3 py-1 bg-primary-dark/10 rounded-full text-sm">
-                  CRT 41.796
-                </span>
-                <span className="px-3 py-1 bg-primary-light/20 rounded-full text-sm">
-                  +20 Formacoes Terapeuticas
-                </span>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  Sua jornada começou no mundo corporativo, atuando em gigantes como{' '}
+                  <span className="font-bold text-white">Banco Itaú, Coca-Cola e grandes
+                  indústrias nacionais.</span> Foi ali que compreendeu, na prática, as dores
+                  invisíveis que travam resultados: medo, insegurança, conflitos internos,
+                  ausência de propósito e bloqueios de prosperidade.
+                </motion.p>
+
+                <motion.p
+                  className="italic text-white/60"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  Mas ele foi além do mercado. Decidiu entender a mente.
+                </motion.p>
               </div>
 
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Psicoterapeuta Transpessoal reconhecido por sua abordagem profunda,
-                integrativa e transformadora. Guia processos terapeuticos focados no
-                autoconhecimento, equilibrio emocional e expansao da consciencia,
-                respeitando a singularidade de cada individuo.
-              </p>
-
-              <div className="bg-white rounded-2xl p-6 shadow-lg border border-olive-100">
-                <p className="text-xl italic text-primary-dark font-medium">
-                  "Com coragem para minha missao de vida!"
+              <motion.div
+                className="mt-10"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                <h2 className="text-3xl sm:text-4xl font-bold leading-tight space-y-1">
+                  <span className="inline-block bg-accent/20 text-accent px-3 py-1">A EMOÇÃO.</span>
+                  <br />
+                  <span className="inline-block bg-accent/20 text-accent px-3 py-1">A ENERGIA.</span>
+                  <br />
+                  <span className="inline-block bg-accent/20 text-accent px-3 py-1">A ALMA HUMANA.</span>
+                </h2>
+                <p className="text-accent font-medium text-lg mt-6">
+                  E mergulhou profundamente.
                 </p>
-                <p className="text-gray-600 mt-2 text-sm">
-                  - Conduzir pessoas na jornada de retorno a propria essencia,
-                  com responsabilidade, etica e amor.
-                </p>
-              </div>
+              </motion.div>
             </motion.div>
 
-            {/* Image Placeholder */}
+            {/* Photo */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -101,8 +137,8 @@ export default function AdilsonSemiguini() {
                 animate={{ y: [-5, 5, -5] }}
                 transition={{ duration: 4, repeat: Infinity }}
               >
-                <p className="font-bold text-2xl">18+</p>
-                <p className="text-sm">Anos de experiencia</p>
+                <p className="font-bold text-2xl">19+</p>
+                <p className="text-sm">Anos de experiência</p>
               </motion.div>
             </motion.div>
           </div>
@@ -119,14 +155,14 @@ export default function AdilsonSemiguini() {
             viewport={{ once: true }}
           >
             <span className="inline-block px-4 py-2 bg-primary-light/20 text-primary-dark font-medium rounded-full text-sm mb-6">
-              Formacoes
+              Formações
             </span>
             <h2 className="heading-2 text-primary-dark mb-6">
-              +20 Formacoes Terapeuticas
+              +20 Formações Terapêuticas
             </h2>
             <p className="text-lg text-gray-600">
-              Uma jornada de aprendizado continuo para oferecer o melhor atendimento
-              e as tecnicas mais eficazes para cada necessidade.
+              Uma jornada de aprendizado contínuo para oferecer o melhor atendimento
+              e as técnicas mais eficazes para cada necessidade.
             </p>
           </motion.div>
 
@@ -162,13 +198,13 @@ export default function AdilsonSemiguini() {
             viewport={{ once: true }}
           >
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent font-medium rounded-full text-sm mb-6">
-              Atuacao
+              Atuação
             </span>
             <h2 className="heading-2 mb-6">
-              Frentes de Atuacao
+              Frentes de Atuação
             </h2>
             <p className="text-lg text-white/70">
-              Areas de expertise onde posso contribuir para sua transformacao
+              Áreas de expertise onde posso contribuir para sua transformação
               pessoal e profissional.
             </p>
           </motion.div>
@@ -203,12 +239,12 @@ export default function AdilsonSemiguini() {
             viewport={{ once: true }}
           >
             <h2 className="heading-2 text-primary-dark mb-6">
-              Transforme Sua Vida com Proposito
+              Transforme Sua Vida com Propósito
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              "Dedico esta missao a todas as pessoas com coragem para se conhecer melhor.
-              Tornar-se consciente e tornar possivel a expansao do seu EU, realizar sua
-              missao de vida e ser um canal de transformacao."
+              "Dedico esta missão a todas as pessoas com coragem para se conhecer melhor.
+              Tornar-se consciente e tornar possível a expansão do seu EU, realizar sua
+              missão de vida e ser um canal de transformação."
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

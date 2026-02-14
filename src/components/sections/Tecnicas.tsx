@@ -12,15 +12,15 @@ const categorias = [
   },
   {
     title: 'Terapia de Casal',
-    tecnicas: ['Reconstrucao de vinculos', 'Comunicacao afetiva', 'Resgate da intimidade'],
+    tecnicas: ['Reconstrução de vínculos', 'Comunicação afetiva', 'Resgate da intimidade'],
   },
   {
-    title: 'Tecnicas de Expansao',
-    tecnicas: ['Constelacao Familiar', 'Regressao de Memoria', 'Reprogramacao Neurocelular', 'EFT', 'Hipnose e PNL'],
+    title: 'Técnicas de Expansão',
+    tecnicas: ['Constelação Familiar', 'Regressão de Memória', 'Reprogramação Neurocelular', 'EFT', 'Hipnose e PNL'],
   },
   {
     title: 'Terapias Integrativas',
-    tecnicas: ['Reiki (I, II, III)', 'Calatonia', 'Access The Bars', 'Temazcal', 'Cromoterapia'],
+    tecnicas: ['Reiki (I, II, III)', 'Calatonia', 'Barra de Access', 'Cromoterapia'],
   },
 ]
 
@@ -41,7 +41,7 @@ export default function Tecnicas() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Nossas Tecnicas
+            Nossas Técnicas
           </motion.span>
 
           <motion.h2
@@ -50,7 +50,7 @@ export default function Tecnicas() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Abordagem Terapeutica Integrativa
+            Abordagem Terapêutica Integrativa
           </motion.h2>
 
           <motion.p
@@ -59,7 +59,7 @@ export default function Tecnicas() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Mais de 20 formacoes terapeuticas combinadas para promover transformacao
+            Mais de 20 formações terapêuticas combinadas para promover transformação
             profunda e duradoura.
           </motion.p>
         </div>
@@ -73,13 +73,13 @@ export default function Tecnicas() {
         >
           <div className="bg-white rounded-2xl p-8 md:p-10 text-center">
             <p className="text-xl md:text-2xl text-gray-700">
-              Voce sabia que mais de <span className="text-primary-dark font-bold">80%</span> dos
-              bloqueios emocionais derivam de padroes inconscientes familiares ou memorias reprimidas?
+              Você sabia que mais de <span className="text-primary-dark font-bold">80%</span> dos
+              bloqueios emocionais derivam de padrões inconscientes familiares ou memórias reprimidas?
             </p>
             <p className="text-lg text-gray-600 mt-4">
-              A integracao de Constelacao Familiar, Regressao de Memoria e Reprogramacao Celular
-              pode acelerar em ate <span className="text-accent font-bold">3x</span> a resolucao de
-              traumas, fobias e desequilibrios emocionais.
+              A integração de Constelação Familiar, Regressão de Memória e Reprogramação Celular
+              pode acelerar em até <span className="text-accent font-bold">3x</span> a resolução de
+              traumas, fobias e desequilíbrios emocionais.
             </p>
           </div>
         </motion.div>
@@ -138,7 +138,7 @@ export default function Tecnicas() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Ver Todas as Tecnicas
+              Ver Todas as Técnicas
             </motion.button>
           </Link>
         </motion.div>
