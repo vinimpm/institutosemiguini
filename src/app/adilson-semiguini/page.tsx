@@ -51,7 +51,7 @@ export default function AdilsonSemiguini() {
                 Adilson Semiguini
               </h1>
 
-              <div className="flex items-center gap-4 mb-6 text-gray-600">
+              <div className="flex flex-wrap items-center gap-3 mb-6 text-gray-600">
                 <span className="px-3 py-1 bg-primary-dark/10 rounded-full text-sm">
                   CRT 41.796
                 </span>
@@ -97,7 +97,7 @@ export default function AdilsonSemiguini() {
 
               {/* Floating Badge */}
               <motion.div
-                className="absolute -bottom-6 -left-6 bg-accent text-primary-dark px-6 py-4 rounded-2xl shadow-xl"
+                className="absolute -bottom-4 -left-2 sm:-bottom-6 sm:-left-6 bg-accent text-primary-dark px-4 py-3 sm:px-6 sm:py-4 rounded-2xl shadow-xl"
                 animate={{ y: [-5, 5, -5] }}
                 transition={{ duration: 4, repeat: Infinity }}
               >

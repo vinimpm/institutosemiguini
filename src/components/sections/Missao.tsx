@@ -48,7 +48,7 @@ export default function Missao() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {/* Quote Card */}
-            <div className="bg-white rounded-3xl shadow-2xl p-10 md:p-16 relative overflow-hidden">
+            <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-10 md:p-16 relative overflow-hidden">
               {/* Quote Icon */}
               <div className="absolute top-6 left-6 text-accent/20">
                 <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ export default function Missao() {
               </div>
 
               <blockquote className="relative z-10">
-                <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary-dark leading-relaxed text-center">
+                <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-primary-dark leading-relaxed text-center">
                   "Promover o desenvolvimento integral de pessoas e organizacoes
                   por meio de solucoes humanizadas, estrategicas e eficazes."
                 </p>

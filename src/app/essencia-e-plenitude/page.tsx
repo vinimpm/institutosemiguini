@@ -145,8 +145,8 @@ export default function EssenciaEPlenitude() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary-light/20 to-accent/20 p-8 flex items-center justify-center">
-                <div className="bg-white rounded-2xl shadow-2xl p-10 text-center max-w-sm">
+              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary-light/20 to-accent/20 p-4 sm:p-8 flex items-center justify-center">
+                <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-10 text-center max-w-sm">
                   <div className="w-20 h-20 bg-gradient-to-br from-primary-dark to-primary-light rounded-2xl mx-auto mb-6 flex items-center justify-center">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />

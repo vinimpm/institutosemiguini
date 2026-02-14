@@ -135,18 +135,18 @@ export default function Hero() {
             <div className="relative">
               {/* Floating Elements */}
               <motion.div
-                className="absolute -top-8 -left-8 w-20 h-20 bg-accent rounded-2xl shadow-xl z-10"
+                className="absolute -top-8 -left-8 w-20 h-20 bg-accent rounded-2xl shadow-xl z-10 hidden sm:block"
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               />
               <motion.div
-                className="absolute -bottom-6 -right-6 w-16 h-16 bg-primary-light rounded-xl shadow-lg z-10"
+                className="absolute -bottom-6 -right-6 w-16 h-16 bg-primary-light rounded-xl shadow-lg z-10 hidden sm:block"
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
               />
 
               {/* Photo Card */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-3xl shadow-2xl overflow-hidden">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl shadow-2xl overflow-hidden">
                 <Image
                   src="/brand/FOTOS/Adilson_HomeHero.jpg"
                   alt="Adilson Semiguini - Fundador do Instituto Semiguini"
