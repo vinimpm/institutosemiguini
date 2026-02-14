@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Hero() {
@@ -124,7 +125,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Logo/Visual */}
+          {/* Photo */}
           <motion.div
             className="relative flex justify-center lg:justify-end"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -134,31 +135,25 @@ export default function Hero() {
             <div className="relative">
               {/* Floating Elements */}
               <motion.div
-                className="absolute -top-8 -left-8 w-20 h-20 bg-accent rounded-2xl shadow-xl"
+                className="absolute -top-8 -left-8 w-20 h-20 bg-accent rounded-2xl shadow-xl z-10"
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               />
               <motion.div
-                className="absolute -bottom-6 -right-6 w-16 h-16 bg-primary-light rounded-xl shadow-lg"
+                className="absolute -bottom-6 -right-6 w-16 h-16 bg-primary-light rounded-xl shadow-lg z-10"
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
               />
 
-              {/* Main Logo Card */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96 bg-white rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/5 to-primary-light/10" />
-                <div className="relative text-center p-8">
-                  <motion.div
-                    className="w-32 h-32 mx-auto bg-gradient-to-br from-primary-dark to-primary-light rounded-2xl flex items-center justify-center mb-6 shadow-xl"
-                    whileHover={{ rotate: 5, scale: 1.05 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  >
-                    <span className="text-white font-bold text-5xl">IS</span>
-                  </motion.div>
-                  <h2 className="text-2xl font-bold text-primary-dark">Instituto</h2>
-                  <h2 className="text-2xl font-bold text-primary-dark">Semiguini</h2>
-                  <p className="text-sm text-gray-500 mt-2 tracking-widest uppercase">Transformando Vidas</p>
-                </div>
+              {/* Photo Card */}
+              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-3xl shadow-2xl overflow-hidden">
+                <Image
+                  src="/brand/FOTOS/Adilson_HomeHero.jpg"
+                  alt="Adilson Semiguini - Fundador do Instituto Semiguini"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </motion.div>
