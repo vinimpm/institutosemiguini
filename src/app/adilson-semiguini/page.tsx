@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const formacoes = [
   'Psicoterapia Transpessoal',
@@ -84,15 +85,14 @@ export default function AdilsonSemiguini() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary-dark to-primary-light">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-5xl font-bold">AS</span>
-                    </div>
-                    <p className="text-lg opacity-80">Adilson Semiguini</p>
-                  </div>
-                </div>
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/brand/FOTOS/Adilson_pagina.jpg"
+                  alt="Adilson Semiguini"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               {/* Floating Badge */}
