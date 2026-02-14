@@ -26,10 +26,21 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMobileMenuOpen])
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || isMobileMenuOpen
           ? 'bg-white/95 backdrop-blur-md shadow-lg py-2'
           : 'bg-transparent py-4'
       }`}
@@ -116,50 +127,52 @@ export default function Header() {
           </button>
         </nav>
 
-        {/* Mobile Menu */}
-        <AnimatePresence>
-          {isMobileMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="xl:hidden overflow-hidden"
-            >
-              <div className="py-4 space-y-2">
-                {navigation.map((item, index) => (
-                  <motion.div
-                    key={item.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05 }}
-                  >
-                    <Link
-                      href={item.href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block px-4 py-3 text-gray-700 hover:text-primary-dark hover:bg-primary-light/20 rounded-lg transition-all"
-                    >
-                      {item.name}
-                    </Link>
-                  </motion.div>
-                ))}
+      </div>
+
+      {/* Mobile Menu - Full Screen Overlay */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="xl:hidden fixed inset-0 top-0 z-40 bg-white overflow-y-auto"
+            style={{ paddingTop: '80px' }}
+          >
+            <div className="container-custom py-6 space-y-2">
+              {navigation.map((item, index) => (
                 <motion.div
+                  key={item.name}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: navigation.length * 0.05 }}
-                  className="pt-4"
+                  transition={{ delay: index * 0.05 }}
                 >
-                  <Link href="/cursos" onClick={() => setIsMobileMenuOpen(false)}>
-                    <button className="btn-accent w-full">
-                      Cursos Semiguini
-                    </button>
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block px-4 py-3 text-lg text-gray-700 hover:text-primary-dark hover:bg-primary-light/20 rounded-lg transition-all"
+                  >
+                    {item.name}
                   </Link>
                 </motion.div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+              ))}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: navigation.length * 0.05 }}
+                className="pt-6"
+              >
+                <Link href="/cursos" onClick={() => setIsMobileMenuOpen(false)}>
+                  <button className="btn-accent w-full">
+                    Cursos Semiguini
+                  </button>
+                </Link>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
 }
