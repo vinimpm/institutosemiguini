@@ -74,16 +74,14 @@ export default function Programas() {
           {programas.map((programa, index) => (
             <motion.div
               key={programa.title}
-              className={`group ${programa.featured ? 'lg:row-span-2' : ''}`}
+              className="group"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
             >
               <Link href={programa.href}>
                 <div
-                  className={`relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 ${
-                    programa.featured ? 'h-full min-h-[500px]' : 'h-64'
-                  }`}
+                  className="relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 h-80"
                 >
                   {/* Background */}
                   <div className={`absolute inset-0 ${programa.image}`} />
@@ -98,10 +96,10 @@ export default function Programas() {
                         Destaque
                       </span>
                     )}
-                    <h3 className={`font-bold mb-3 ${programa.featured ? 'text-3xl' : 'text-xl'}`}>
+                    <h3 className="text-xl font-bold mb-3">
                       {programa.title}
                     </h3>
-                    <p className={`text-white/80 ${programa.featured ? 'text-lg' : 'text-sm'}`}>
+                    <p className="text-sm text-white/80">
                       {programa.description}
                     </p>
 
